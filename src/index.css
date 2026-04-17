@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f4ede0;
+  --cream-dark: #e8dcc5;
+  --ink: #1a1410;
+  --ink-soft: #2d2620;
+  --tomato: #c73a1f;
+  --tomato-deep: #8f2212;
+  --ember: #e8662a;
+  --basil: #4a5d3a;
+  --gold: #b8893d;
+  --display: "Fraunces", serif;
+  --body: "Inter Tight", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 900px) {
+  html,
+  body {
+    cursor: auto;
+  }
+}
