@@ -78,7 +78,7 @@ export default function Footer() {
         </h2>
         <a href="#" className="finale-cta" data-cursor="reserve">הזמנת שולחן</a>
         <div className="footer-meta">
-          <span>פורנו · רחוב לילינבלום 14, תל אביב</span>
+          <span>פיצה של הודי · רחוב לילינבלום 14, תל אביב</span>
           <span>שלישי–ראשון · 18:00–23:00</span>
           <span>© MMXXVI · כל הזכויות שמורות</span>
         </div>

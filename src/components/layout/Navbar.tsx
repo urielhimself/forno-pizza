@@ -97,7 +97,7 @@ export default function Navbar() {
         }
       `}</style>
       <div className="nav-logo" style={{ display: 'flex', alignItems: 'center' }}>
-        <Logo size={80} />
+        <Logo size={62} />
       </div>
       <ul className="nav-links">
         <li><a href="#menu">תפריט</a></li>
