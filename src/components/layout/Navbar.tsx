@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap, ScrollTrigger } from '../../lib/gsap'
+import Logo from '../ui/Logo'
 
 export default function Navbar() {
   const navRef = useRef<HTMLElement>(null)
@@ -95,16 +96,16 @@ export default function Navbar() {
           .nav-links { display: none !important; }
         }
       `}</style>
-      <div className="nav-logo">
-        Forno<span style={{ color: 'var(--tomato)' }}>.</span>
+      <div className="nav-logo" style={{ display: 'flex', alignItems: 'center' }}>
+        <Logo size={80} />
       </div>
       <ul className="nav-links">
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#story">Story</a></li>
-        <li><a href="#press">Press</a></li>
-        <li><a href="#visit">Visit</a></li>
+        <li><a href="#menu">תפריט</a></li>
+        <li><a href="#story">הסיפור</a></li>
+        <li><a href="#press">בעיתונות</a></li>
+        <li><a href="#visit">ביקור</a></li>
       </ul>
-      <a href="#reserve" className="nav-cta">Reserve</a>
+      <a href="#reserve" className="nav-cta">הזמנת מקום</a>
     </nav>
   )
 }

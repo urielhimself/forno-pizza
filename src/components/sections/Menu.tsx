@@ -158,10 +158,10 @@ export default function Menu() {
       `}</style>
       <section ref={sectionRef} className="menu-section" id="menu">
         <div className="menu-intro">
-          <div className="menu-intro-label reveal">The Menu</div>
+          <div className="menu-intro-label reveal">התפריט</div>
           <h2 className="menu-intro-title reveal-lines">
-            Three pizzas.<br />
-            <span className="italic">That's the whole story.</span>
+            שלוש פיצות.<br />
+            <span className="italic">זה הסיפור כולו.</span>
           </h2>
         </div>
 

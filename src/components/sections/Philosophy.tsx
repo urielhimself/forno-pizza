@@ -42,6 +42,22 @@ export default function Philosophy() {
         },
         color: '#c5b8a0',
       })
+
+      // Slide heading from left, body from right
+      gsap.from('.phil-left-col', {
+        x: -80,
+        opacity: 0,
+        duration: 1.3,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.philosophy-section', start: 'top 75%' },
+      })
+      gsap.from('.phil-body', {
+        x: 80,
+        opacity: 0,
+        duration: 1.3,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.philosophy-section', start: 'top 75%' },
+      })
     }, el)
 
     return () => ctx.revert()
@@ -112,23 +128,23 @@ export default function Philosophy() {
       `}</style>
       <section ref={sectionRef} className="philosophy-section">
         <div className="philosophy-grid">
-          <div>
-            <div className="phil-label reveal">Philosophy</div>
+          <div className="phil-left-col">
+            <div className="phil-label reveal">פילוסופיה</div>
             <h2 className="philosophy-heading reveal-lines">
-              We make <span className="italic">three</span><br />
-              things. That's<br />
-              the whole <span className="italic">menu.</span>
+              אנחנו מכינים<br />
+              שלושה דברים.<br />
+              זה התפריט <span className="italic">כולו.</span>
             </h2>
           </div>
           <div className="phil-body">
             <p className="reveal">
-              <span className="drop">T</span>here are pizzerias that chase trends and pizzerias that ignore them. We do neither. We chose three pies in 2019 — the Margherita, the Marinara, and the Diavola — and we have made them, unchanged, ever since.
+              <span className="drop">י</span>ש פיצריות שרודפות אחרי טרנדים, ויש כאלה שמתעלמות מהם. אנחנו לא עושים לא זה ולא זה. בחרנו שלוש פיצות ב-2019 — מרגריטה, מרינרה ודיאבולה — ומאז הכנו אותן, ללא שינוי, בכל יום.
             </p>
             <p className="reveal">
-              The dough rests for seventy-two hours. The tomatoes come from a farm we visit twice a year. The oven, a wood-fired Stefano Ferrara, burns at 485°C and has never been turned off.
+              הבצק נח שבעים ושתיים שעות. העגבניות מגיעות מחווה שאנחנו מבקרים בה פעמיים בשנה. התנור, שרפת עצים מתוצרת סטפנו פרארה, בוער ב-485° ומעולם לא כובה.
             </p>
             <p className="reveal">
-              This is a long way of saying: we are not in a hurry, and we hope you aren't either.
+              זוהי דרך ארוכה לומר: אנחנו לא ממהרים, ואנחנו מקווים שגם אתם לא.
             </p>
           </div>
         </div>

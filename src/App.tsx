@@ -10,6 +10,7 @@ import Menu from './components/sections/Menu'
 import Story from './components/sections/Story'
 import Ingredients from './components/sections/Ingredients'
 import Press from './components/sections/Press'
+import Testimonials from './components/sections/Testimonials'
 import Footer from './components/sections/Footer'
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
           <Story />
           <Ingredients />
           <Press />
+          <Testimonials />
           <Footer />
         </>
       )}

@@ -10,8 +10,8 @@
   --ember: #e8662a;
   --basil: #4a5d3a;
   --gold: #b8893d;
-  --display: "Fraunces", serif;
-  --body: "Inter Tight", sans-serif;
+  --display: "Frank Ruhl Libre", "Fraunces", serif;
+  --body: "Heebo", "Inter Tight", sans-serif;
 }
 
 * {
@@ -59,4 +59,29 @@ body::before {
   body {
     cursor: auto;
   }
+}
+
+[dir="rtl"] .phil-label::before,
+[dir="rtl"] .testi-label::before,
+[dir="rtl"] .philosophy-label::before {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[dir="rtl"] .scroll-hint {
+  transform: rotate(0deg);
+}
+
+[dir="rtl"] .story-label,
+[dir="rtl"] .ingredients-label,
+[dir="rtl"] .menu-intro-label,
+[dir="rtl"] .press-label {
+  direction: rtl;
+}
+
+@keyframes pizzaSpin {
+  to { transform: rotate(360deg); }
+}
+@keyframes pizzaSpinReverse {
+  to { transform: rotate(-360deg); }
 }

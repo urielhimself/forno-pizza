@@ -33,7 +33,7 @@ export default function Loader({ onComplete }: LoaderProps) {
       onUpdate: () => {
         const v = Math.floor(counter.val)
         if (countRef.current) {
-          countRef.current.textContent = `FORNO — ${String(v).padStart(2, '0')}`
+          countRef.current.textContent = `פורנו — ${String(v).padStart(2, '0')}`
         }
         if (barRef.current) {
           barRef.current.style.width = `${v}%`
@@ -68,7 +68,7 @@ export default function Loader({ onComplete }: LoaderProps) {
           overflow: 'hidden',
         }}
       >
-        <span ref={countRef}>FORNO — 00</span>
+        <span ref={countRef}>פורנו — 00</span>
       </div>
       <div
         ref={barRef}

@@ -86,15 +86,15 @@ export default function Hero() {
             opacity: 0,
           }}
         >
-          <span>EST. 2019 · A PIZZERIA IN <em>PARTICULAR</em></span>
+          <span>נוסד 2019 · פיצריה שאינה מתנצלת</span>
           <span>N°01</span>
-          <span>NAPOLI — TEL AVIV — NEW YORK</span>
+          <span>נאפולי — תל אביב — ניו יורק</span>
         </div>
 
         <h1 className="hero-title-display">
-          <span className="hero-line"><span className="hero-word">Fire,</span></span>
-          <span className="hero-line"><span className="hero-word hero-italic">flour,</span></span>
-          <span className="hero-line"><span className="hero-word">&nbsp;&nbsp;patience.</span></span>
+          <span className="hero-line"><span className="hero-word">אש,</span></span>
+          <span className="hero-line"><span className="hero-word hero-italic">קמח,</span></span>
+          <span className="hero-line"><span className="hero-word">&nbsp;&nbsp;סבלנות.</span></span>
         </h1>
 
         <div
@@ -155,10 +155,10 @@ export default function Hero() {
           }}
         >
           <p style={{ maxWidth: 400, fontSize: 15, lineHeight: 1.6, color: 'var(--ink-soft)' }}>
-            A dough fermented seventy-two hours. A fire lit at dawn. Pizza as<br />
-            it was meant to be — slow, uncompromising, <em>alive.</em>
+            בצק שתסס שבעים ושתיים שעות. אש שהודלקה עם שחר. פיצה כפי שנועדה להיות —<br />
+            איטית, ללא פשרות, <em>חיה.</em>
           </p>
-          <div className="scroll-hint">Scroll</div>
+          <div className="scroll-hint">גלול</div>
         </div>
       </section>
     </>

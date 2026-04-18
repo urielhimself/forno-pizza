@@ -73,14 +73,14 @@ export default function Footer() {
       `}</style>
       <section ref={sectionRef} className="finale-section" id="visit">
         <h2 className="finale-title-wrap reveal-lines">
-          Come <span className="italic">hungry.</span><br />
-          Leave <span className="italic">changed.</span>
+          בואו <span className="italic">רעבים.</span><br />
+          לכו <span className="italic">משתנים.</span>
         </h2>
-        <a href="#" className="finale-cta" data-cursor="reserve">Reserve a Table</a>
+        <a href="#" className="finale-cta" data-cursor="reserve">הזמנת שולחן</a>
         <div className="footer-meta">
-          <span>FORNO · 14 LILIENBLUM ST, TEL AVIV</span>
-          <span>TUE–SUN · 18:00–23:00</span>
-          <span>© MMXXVI · ALL RIGHTS RESERVED</span>
+          <span>פורנו · רחוב לילינבלום 14, תל אביב</span>
+          <span>שלישי–ראשון · 18:00–23:00</span>
+          <span>© MMXXVI · כל הזכויות שמורות</span>
         </div>
       </section>
     </>

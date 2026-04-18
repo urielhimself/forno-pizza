@@ -126,12 +126,12 @@ export default function Ingredients() {
         </div>
 
         <div className="ingredients-inner">
-          <div className="ingredients-label reveal">Sourced with unreasonable care</div>
+          <div className="ingredients-label reveal">מרכיבים שנבחרו בקפדנות בלתי סבירה</div>
           <h2 className="ingredients-title reveal-lines">
-            Flour from <span className="italic">Molino</span><br />
-            Caputo. Tomatoes<br />
-            from <span className="italic">Agro Sarnese.</span><br />
-            Salt from the <span className="italic">sea.</span>
+            קמח מ<span className="italic">Molino</span><br />
+            Caputo. עגבניות<br />
+            מ<span className="italic">Agro Sarnese.</span><br />
+            מלח מן <span className="italic">הים.</span>
           </h2>
         </div>
       </section>

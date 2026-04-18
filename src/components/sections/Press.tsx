@@ -18,6 +18,22 @@ export default function Press() {
           scrollTrigger: { trigger: target, start: 'top 85%' },
         })
       })
+
+      gsap.from('.press-quote-wrap', {
+        x: -100,
+        opacity: 0,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.press-section', start: 'top 75%' },
+      })
+      gsap.from('.press-attribution', {
+        x: 100,
+        opacity: 0,
+        duration: 1.2,
+        delay: 0.2,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.press-section', start: 'top 75%' },
+      })
     }, el)
     return () => ctx.revert()
   }, [])
@@ -51,8 +67,8 @@ export default function Press() {
       `}</style>
       <section ref={sectionRef} className="press-section" id="press">
         <div className="press-inner">
-          <div className="press-label reveal">Press · Reviews</div>
-          <div ref={quoteRef}>
+          <div className="press-label reveal">עיתונות · ביקורות</div>
+          <div ref={quoteRef} className="press-quote-wrap">
             <blockquote
               className="press-quote"
               dangerouslySetInnerHTML={{ __html: pressQuotes[current].quote }}

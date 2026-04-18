@@ -136,10 +136,10 @@ export default function Story() {
       `}</style>
       <section ref={sectionRef} className="story-section" id="story">
         <div className="story-intro">
-          <div className="story-label reveal">A Short History</div>
+          <div className="story-label reveal">היסטוריה קצרה</div>
           <h2 className="story-heading reveal-lines">
-            How a <span className="italic">stubborn</span> idea<br />
-            became a pizzeria.
+            איך רעיון <span className="italic">עקשן</span><br />
+            הפך לפיצריה.
           </h2>
         </div>
         <div ref={containerRef} className="story-horizontal">

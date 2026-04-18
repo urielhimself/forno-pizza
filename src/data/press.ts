@@ -13,50 +13,50 @@ export interface StoryPanel {
 export const pressQuotes: PressQuote[] = [
   {
     quote:
-      '"The crust is <em>a rumor</em> of a crust — thin, charred, structural in the way a good essay is structural. You finish the pizza, and the pizza finishes you."',
-    attribution: '— Pete Wells, The New York Times · Four Stars',
+      '"הקרום הוא <em>שמועה</em> של קרום — דק, פחמי, מבני כמו מסאה טובה. אתה מסיים את הפיצה, והפיצה מסיימת אותך."',
+    attribution: '— פיט וולס, הניו יורק טיימס · ארבעה כוכבים',
   },
   {
     quote:
-      '"In a city of loud restaurants, Forno is <em>almost silent.</em> The kitchen speaks only through the oven. The oven speaks only through the dough."',
-    attribution: '— Time Out Tel Aviv · Restaurant of the Year 2024',
+      '"בעיר של מסעדות רועשות, פורנו <em>כמעט שקטה.</em> המטבח מדבר רק דרך התנור. התנור מדבר רק דרך הבצק."',
+    attribution: '— טיים אאוט תל אביב · מסעדת השנה 2024',
   },
   {
     quote:
-      '"Three pizzas. Three. I asked if the menu had changed. The waiter just smiled. <em>It has not, and it will not.</em>"',
-    attribution: '— Haaretz Food · Best Pizza in the Country',
+      '"שלוש פיצות. שלוש. שאלתי אם התפריט השתנה. המלצר רק חייך. <em>הוא לא השתנה, ולא ישתנה.</em>"',
+    attribution: '— הארץ מזון · הפיצה הטובה ביותר בארץ',
   },
 ]
 
 export const storyPanels: StoryPanel[] = [
   {
     year: '2017',
-    title: 'The idea, in Naples.',
-    body: 'Two years apprenticing under Enzo Coccia. One kilo of flour, one question: <em>how slow is too slow?</em>',
+    title: 'הרעיון, בנאפולי.',
+    body: 'שנתיים של חניכות אצל אנצו קוצ\'א. קילו אחד של קמח, שאלה אחת: <em>כמה איטי זה יותר מדי איטי?</em>',
     visual: 'flame',
   },
   {
     year: '2019',
-    title: 'First oven, Tel Aviv.',
-    body: 'A Stefano Ferrara, shipped from Italy. Twelve weeks on the water. Lit on the first try.',
+    title: 'התנור הראשון, תל אביב.',
+    body: 'סטפנו פרארה, שנשלח מאיטליה. שתים עשרה שבועות בים. הודלק בניסיון הראשון.',
     visual: 'oven',
   },
   {
     year: '2021',
-    title: 'Three pies, decided.',
-    body: 'We tried eighteen. We kept three. The others weren\'t bad — they just weren\'t essential.',
+    title: 'שלוש פיצות, הוחלט.',
+    body: 'ניסינו שמונה עשרה. שמרנו שלוש. השאר לא היו רעות — הן פשוט לא היו הכרחיות.',
     visual: 'pies',
   },
   {
     year: '2023',
-    title: 'A four-star review.',
-    body: "We didn't frame it. We taped it next to the oven, where it belongs.",
+    title: 'ביקורת ארבעה כוכבים.',
+    body: 'לא תלינו אותה במסגרת. הדבקנו אותה ליד התנור, שם היא שייכת.',
     visual: 'review',
   },
   {
     year: '2026',
-    title: 'Today.',
-    body: 'The oven is still on. The menu is still three. Come hungry.',
+    title: 'היום.',
+    body: 'התנור עדיין דולק. התפריט עדיין שלוש. בואו רעבים.',
     visual: 'today',
   },
 ]
