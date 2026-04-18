@@ -5,9 +5,9 @@ interface PizzaImageProps {
 }
 
 const SRC: Record<PizzaImageProps['variant'], string> = {
-  margherita: '/images/pizzas/margherita.png',
-  marinara: '/images/pizzas/marinara.png',
-  diavola: '/images/pizzas/diavola.png',
+  margherita: '/images/pizzas/margherita.webp',
+  marinara: '/images/pizzas/marinara.webp',
+  diavola: '/images/pizzas/diavola.webp',
 }
 
 const ALT: Record<PizzaImageProps['variant'], string> = {
