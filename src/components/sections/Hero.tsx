@@ -91,7 +91,7 @@ export default function Hero() {
           <span>נאפולי — תל אביב — ניו יורק</span>
         </div>
 
-        <h1 className="hero-title-display">
+        <h1 className="hero-title-display" style={{ position: 'relative', zIndex: 2 }}>
           <span className="hero-line"><span className="hero-word">אש,</span></span>
           <span className="hero-line"><span className="hero-word hero-italic">קמח,</span></span>
           <span className="hero-line"><span className="hero-word">&nbsp;&nbsp;סבלנות.</span></span>
@@ -102,12 +102,13 @@ export default function Hero() {
           style={{
             position: 'absolute',
             top: '50%',
-            right: -100,
-            width: 500,
-            height: 500,
+            left: -80,
+            width: 420,
+            height: 420,
             transform: 'translateY(-50%)',
             pointerEvents: 'none',
             zIndex: 0,
+            opacity: 0.55,
           }}
         >
           <svg

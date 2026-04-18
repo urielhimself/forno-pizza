@@ -74,7 +74,7 @@ export default function Footer() {
       <section ref={sectionRef} className="finale-section" id="visit">
         <h2 className="finale-title-wrap reveal-lines">
           בואו <span className="italic">רעבים.</span><br />
-          לכו <span className="italic">משתנים.</span>
+          לכו <span className="italic">מאושרים.</span>
         </h2>
         <a href="#" className="finale-cta" data-cursor="reserve">הזמנת שולחן</a>
         <div className="footer-meta">

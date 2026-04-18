@@ -128,9 +128,9 @@ export default function Ingredients() {
         <div className="ingredients-inner">
           <div className="ingredients-label reveal">מרכיבים שנבחרו בקפדנות בלתי סבירה</div>
           <h2 className="ingredients-title reveal-lines">
-            קמח מ<span className="italic">Molino</span><br />
-            Caputo. עגבניות<br />
-            מ<span className="italic">Agro Sarnese.</span><br />
+            קמח ממטחנות<br />
+            <span className="italic">קפוטו.</span> עגבניות<br />
+            מדרום <span className="italic">איטליה.</span><br />
             מלח מן <span className="italic">הים.</span>
           </h2>
         </div>
