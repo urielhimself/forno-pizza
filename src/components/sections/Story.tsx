@@ -95,13 +95,14 @@ export default function Story() {
       const track = trackRef.current
       const container = containerRef.current
       if (track && container) {
+        const getDistance = () => Math.max(0, track.scrollWidth - container.clientWidth)
         gsap.to(track, {
-          x: () => -(track.scrollWidth - window.innerWidth + 80),
+          x: () => -getDistance(),
           ease: 'none',
           scrollTrigger: {
             trigger: container,
             start: 'top top',
-            end: () => '+=' + (track.scrollWidth - window.innerWidth),
+            end: () => '+=' + getDistance(),
             scrub: 1,
             pin: true,
             anticipatePin: 1,
@@ -122,9 +123,9 @@ export default function Story() {
         .story-label { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--tomato); margin-bottom: 32px; }
         .story-heading { font-family: var(--display); font-size: clamp(3rem, 6vw, 7rem); font-weight: 300; line-height: 0.95; letter-spacing: -0.03em; }
         .story-heading .italic { font-style: italic; color: var(--tomato); }
-        .story-horizontal { height: 100vh; position: relative; }
-        .story-track { display: flex; height: 100%; width: max-content; align-items: center; padding: 0 40px; gap: 120px; }
-        .story-panel { flex: 0 0 auto; width: 500px; display: flex; flex-direction: column; gap: 24px; }
+        .story-horizontal { height: 100vh; position: relative; overflow: hidden; direction: ltr; }
+        .story-track { display: flex; height: 100%; width: max-content; align-items: center; padding: 0 6vw; gap: 120px; direction: ltr; will-change: transform; }
+        .story-panel { flex: 0 0 auto; width: 500px; display: flex; flex-direction: column; gap: 24px; direction: rtl; text-align: right; }
         .story-panel-year { font-family: var(--display); font-size: 96px; font-weight: 300; font-style: italic; color: var(--tomato); line-height: 1; }
         .story-panel-visual { width: 100%; aspect-ratio: 4/3; background: var(--cream-dark); overflow: hidden; }
         .story-panel-title { font-family: var(--display); font-size: 32px; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; }

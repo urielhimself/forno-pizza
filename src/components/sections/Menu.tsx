@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from '../../lib/gsap'
 import { menuItems } from '../../data/menu'
-import PizzaSvg from '../ui/PizzaSvg'
+import PizzaImage from '../ui/PizzaImage'
 
 export default function Menu() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -31,7 +31,7 @@ export default function Menu() {
       })
 
       gsap.utils.toArray<HTMLElement>('.menu-item-row', el).forEach((item) => {
-        const pizza = item.querySelector<HTMLElement>('.pizza-svg-wrap')
+        const pizza = item.querySelector<HTMLElement>('.pizza-media-wrap')
         const text = item.querySelector<HTMLElement>('.menu-item-text')
 
         if (pizza) {
@@ -141,16 +141,13 @@ export default function Menu() {
           font-weight: 400;
           letter-spacing: -0.02em;
         }
-        .pizza-svg-wrap {
+        .pizza-media-wrap {
           position: relative;
           aspect-ratio: 1;
           display: flex;
           align-items: center;
           justify-content: center;
-        }
-        .pizza-svg-wrap svg {
-          width: 90%;
-          height: 90%;
+          width: 100%;
         }
         @media (max-width: 900px) {
           .menu-item-row { grid-template-columns: 1fr; padding: 60px 24px; min-height: auto; gap: 40px; }
@@ -181,8 +178,8 @@ export default function Menu() {
                 </div>
                 <div className="menu-item-price">{item.price}</div>
               </div>
-              <div className="pizza-svg-wrap">
-                <PizzaSvg variant={item.variant} spinReverse={item.spinReverse} />
+              <div className="pizza-media-wrap">
+                <PizzaImage variant={item.variant} spinReverse={item.spinReverse} />
               </div>
             </div>
           ))}
