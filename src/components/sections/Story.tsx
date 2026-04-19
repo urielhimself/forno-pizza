@@ -88,7 +88,7 @@ export default function Story() {
                 <div className="story-panel-year">{panel.year}</div>
                 <div className="story-panel-visual">
                   <img
-                    src={`/images/story.${panel.year}.webp`}
+                    src={`/images/pizzas/story.${panel.year}.webp`}
                     alt={panel.title}
                     width={800}
                     height={600}
