@@ -93,9 +93,9 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-title-display" style={{ position: 'relative', zIndex: 2 }}>
-          <span className="hero-line"><span className="hero-word">אש,</span></span>
-          <span className="hero-line"><span className="hero-word hero-italic">קמח,</span></span>
-          <span className="hero-line"><span className="hero-word">&nbsp;&nbsp;סבלנות.</span></span>
+          <span className="hero-line" style={{ paddingBottom: '0.15em' }}><span className="hero-word">אש,</span></span>
+          <span className="hero-line" style={{ paddingBottom: '0.15em' }}><span className="hero-word hero-italic">קמח,</span></span>
+          <span className="hero-line" style={{ paddingBottom: '0.15em' }}><span className="hero-word">&nbsp;&nbsp;סבלנות.</span></span>
         </h1>
 
         <div
