@@ -2,68 +2,6 @@ import { useEffect, useRef } from 'react'
 import { gsap } from '../../lib/gsap'
 import { storyPanels } from '../../data/press'
 
-function StoryVisual({ visual }: { visual: string }) {
-  if (visual === 'flame') {
-    return (
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%' }}>
-        <rect width="400" height="300" fill="#2d2620" />
-        <circle cx="200" cy="200" r="100" fill="#c73a1f" />
-        <circle cx="200" cy="200" r="100" fill="url(#flame1)" opacity="0.8" />
-        <ellipse cx="200" cy="220" rx="120" ry="15" fill="#1a1410" opacity="0.5" />
-        <defs>
-          <radialGradient id="flame1">
-            <stop offset="0%" stopColor="#ffcc66" />
-            <stop offset="60%" stopColor="#e8662a" />
-            <stop offset="100%" stopColor="#8f2212" />
-          </radialGradient>
-        </defs>
-      </svg>
-    )
-  }
-  if (visual === 'oven') {
-    return (
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%' }}>
-        <rect width="400" height="300" fill="#e8dcc5" />
-        <rect x="50" y="80" width="300" height="180" fill="#8f2212" />
-        <rect x="70" y="100" width="260" height="10" fill="#c73a1f" />
-        <rect x="70" y="120" width="260" height="10" fill="#c73a1f" />
-        <circle cx="200" cy="180" r="40" fill="#1a1410" />
-        <circle cx="200" cy="180" r="30" fill="#e8662a" />
-        <circle cx="200" cy="180" r="20" fill="#ffcc66" />
-      </svg>
-    )
-  }
-  if (visual === 'pies') {
-    return (
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%' }}>
-        <rect width="400" height="300" fill="#1a1410" />
-        <circle cx="150" cy="150" r="60" fill="#c73a1f" />
-        <circle cx="250" cy="150" r="50" fill="#d4a574" />
-        <circle cx="200" cy="220" r="70" fill="#8f2212" />
-        <circle cx="150" cy="150" r="45" fill="#f4ede0" opacity="0.3" />
-        <circle cx="250" cy="150" r="38" fill="#c73a1f" />
-      </svg>
-    )
-  }
-  if (visual === 'review') {
-    return (
-      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%' }}>
-        <rect width="400" height="300" fill="#f4ede0" />
-        <rect x="60" y="60" width="280" height="180" fill="#1a1410" />
-        <text x="200" y="140" fontFamily="Fraunces, serif" fontStyle="italic" fontSize="50" fill="#c73a1f" textAnchor="middle">★★★★</text>
-        <text x="200" y="200" fontFamily="Fraunces, serif" fontSize="20" fill="#f4ede0" textAnchor="middle">The New York Times</text>
-      </svg>
-    )
-  }
-  // today
-  return (
-    <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%' }}>
-      <rect width="400" height="300" fill="#c73a1f" />
-      <text x="200" y="170" fontFamily="Fraunces, serif" fontStyle="italic" fontWeight="300" fontSize="100" fill="#f4ede0" textAnchor="middle">today.</text>
-    </svg>
-  )
-}
-
 export default function Story() {
   const trackRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -149,7 +87,14 @@ export default function Story() {
               <div key={panel.year} className="story-panel">
                 <div className="story-panel-year">{panel.year}</div>
                 <div className="story-panel-visual">
-                  <StoryVisual visual={panel.visual} />
+                  <img
+                    src={`/images/story.${panel.year}.webp`}
+                    alt={panel.title}
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
                 </div>
                 <h3 className="story-panel-title">{panel.title}</h3>
                 <p className="story-panel-body" dangerouslySetInnerHTML={{ __html: panel.body }} />
